@@ -3,12 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-
 body {
-    background-color: #fafafa;
-    font-family: "Barlow Condensed ExtraLight"
+    background-color: #fafafa !important;
+    font-family: "Barlow Condensed ExtraLight";
 }
+
 
 /* --------navbar--------- */
 nav ul {
