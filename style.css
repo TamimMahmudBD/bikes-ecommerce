@@ -3,11 +3,22 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     background-color: #fafafa !important;
     font-family: "Barlow Condensed ExtraLight";
 }
 
+/* ------common-section------ */
+.container {
+    margin: 60px 60px 30px;
+}
+
+.common-section-header h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 320;
+}
 
 /* --------navbar--------- */
 nav ul {
@@ -17,11 +28,22 @@ nav ul {
     margin-bottom: 0px;
 }
 
-/* --------hero-ariya---------- */
 nav ul li {
     list-style: none;
     margin: 0px 40px;
 }
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a:hover {
+    color: rgb(95, 93, 93);
+    text-decoration: none;
+}
+
+/* --------hero-ariya---------- */
 
 .hero-ariya {
     display: flex;
@@ -63,7 +85,7 @@ nav ul li {
     text-decoration: none;
     color: rgb(0, 0, 0);
     border: 1px solid rgb(0, 0, 0);
-    padding: 8px 36px;
+    padding: 5px 30px;
     font-size: 1rem;
     background: transparent;
     position: relative;
@@ -78,16 +100,6 @@ nav ul li {
     text-decoration: none;
 }
 
-/* ------common-section------ */
-.container{
-    padding: 50px 60px 10px 60px;
-}
-.common-section-header h1 {
-    text-align: center;
-    font-size: 3rem;
-    font-weight: 320;
-}
-
 /* -------bikes-------- */
 
 .bikes-grid-section {
@@ -96,7 +108,8 @@ nav ul li {
     grid-auto-rows: 1fr;
     grid-gap: 10px;
     justify-items: center;
-    
+    margin: 0px 100px;
+
 }
 
 .bikes-grid {
@@ -113,10 +126,235 @@ nav ul li {
     text-decoration: none;
     color: black;
 }
+
 /* ---------frames------- */
-.frames{
+
+.freams-img {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.freams-img img {
+    padding: 0px 15px;
+}
+
+/* ------img-grid------ */
+.bike-img-para {
+    margin: 0px 100px;
+}
+
+.bike-img-para {
+    margin-top: 5%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr;
+    grid-gap: 10px;
+}
+
+.bike-img-col {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.bike-img-col img {
+    width: 100%;
+}
+
+.layer {
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .5s;
+}
+
+.layer h3 {
+    color: black;
+    width: 100%;
+    font-weight: 500;
+    color: white;
+    font-size: 14px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+}
+
+.layer:hover {
+    background-color: rgba(3, 3, 3, 0.575);
+}
+
+.layer:hover h3 {
+    padding: 15px;
+    opacity: 1;
+}
+
+.more-btn {
+    text-align: center;
+    margin-top: 45px;
+}
+
+.underline {
+    display: block;
+    align-items: center;
+    margin: 25px auto;
+    border: .5px solid rgb(94, 94, 94);
+    width: 200px;
+    text-align: center;
+}
+
+/* ------castomer-review------- */
+.review {
+    margin: 0 20%;
+}
+
+.slideshow-container {
+    display: block;
+    position: relative;
+}
+
+.mySlides {
+    display: none;
+    height: 350px;
+    padding: 80px;
+    text-align: center;
+}
+
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    color: white;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+q {
+    font-style: italic;
+}
+
+.author {
+    color: rgb(71, 71, 71);
+    text-align: right;
+    margin-top: 25px;
+}
+
+
+.dot-container {
+    text-align: center;
+    padding: 0px 20px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+/* -----------contact-section------- */
+.contact{
+    margin-top: 65px;
+}
+.contact-btn {
+    margin: 25px auto;
+    width: 148px;
+    border: 1px solid #242424;
+    background-color: rgb(239,237,237);
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+.contact-btn a{
+    color: #242424;
+}
+.contact-btn a:hover{
+    color: #717171;
+}
+.contact-btn a:link{
+    text-decoration: none;
+}
+.contact-btn:hover{
+    letter-spacing: 2px;
+}
+.socila-icon{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 25px;
+}
+.socila-icon i{
+    margin: 5px;
+    color: rgb(131, 128, 128);
+}
+.contact-text{
+    width: 350px;
+    text-align: center;
+    margin: auto;
+}
+/* --------contact-form-section------- */
+.form-ariya{
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+    margin: auto;
+    padding: 25px 35px;
+    background-color: #ffff;
+}
+.form-ariya h5{
+    font-size: 22px;
+}
+.form-ariya p{
+    font-size: 10px;
+    text-align: right;
+}
+.form-ariya h6{
+    font-size: 14px;
+    margin:2px 0px 15px 0px;
+}
+.form-ariya input{
+    width: 600px;
+    height: 30px;
+}
+/* -----tiger-section----- */
+.tinger-section img{
+    display: block;
+    margin: auto;
+    width: 450px;
 }
