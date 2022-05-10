@@ -1,5 +1,17 @@
 
 @media screen and (max-width: 1160px){
+
+    
+nav ul li {
+    list-style: none;
+    margin: 0px 3.5rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #494848;
+    font-size: 15px;
+}
     .right-bar h1{
         font-size: 1.3rem;
     }
