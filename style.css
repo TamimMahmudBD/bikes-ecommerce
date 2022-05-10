@@ -375,6 +375,7 @@ q {
     width: 450px;
 }
 
+
 /* --------brand-section------ */
 .brand-img-section {
     display: flex;
@@ -382,6 +383,11 @@ q {
     flex-wrap: wrap;
     margin-top: 25px;
     cursor: pointer;
+}
+
+.brand-img-section img:hover{
+    filter: opacity(30%);
+    transition: .5s;
 }
 
 /* -----footer-section------ */
