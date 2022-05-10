@@ -134,6 +134,7 @@ nav ul li a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .freams-img img {
@@ -288,48 +289,57 @@ q {
 }
 
 /* -----------contact-section------- */
-.contact{
+.contact {
     margin-top: 65px;
 }
+
 .contact-btn {
     margin: 25px auto;
     width: 148px;
     border: 1px solid #242424;
-    background-color: rgb(239,237,237);
+    background-color: rgb(239, 237, 237);
     padding: 10px;
     text-align: center;
     cursor: pointer;
 }
-.contact-btn a{
+
+.contact-btn a {
     color: #242424;
 }
-.contact-btn a:hover{
+
+.contact-btn a:hover {
     color: #717171;
 }
-.contact-btn a:link{
+
+.contact-btn a:link {
     text-decoration: none;
 }
-.contact-btn:hover{
+
+.contact-btn:hover {
     letter-spacing: 2px;
 }
-.socila-icon{
+
+.socila-icon {
     display: flex;
     justify-content: center;
     text-align: center;
     font-size: 34px;
     margin-bottom: 25px;
 }
-.socila-icon i{
+
+.socila-icon i {
     margin: 5px;
     color: rgb(131, 128, 128);
 }
-.contact-text{
+
+.contact-text {
     width: 350px;
     text-align: center;
     margin: auto;
 }
+
 /* --------contact-form-section------- */
-.form-ariya{
+.form-ariya {
     display: flex;
     flex-direction: column;
     width: 650px;
@@ -337,24 +347,59 @@ q {
     padding: 25px 35px;
     background-color: #ffff;
 }
-.form-ariya h5{
+
+.form-ariya h5 {
     font-size: 22px;
 }
-.form-ariya p{
+
+.form-ariya p {
     font-size: 10px;
     text-align: right;
 }
-.form-ariya h6{
+
+.form-ariya h6 {
     font-size: 14px;
-    margin:2px 0px 15px 0px;
+    margin: 2px 0px 15px 0px;
 }
-.form-ariya input{
+
+.form-ariya input {
     width: 600px;
     height: 30px;
 }
+
 /* -----tiger-section----- */
-.tinger-section img{
+.tinger-section img {
+    margin-top: 35px;
     display: block;
-    margin: auto;
+    margin-left: auto;
     width: 450px;
+}
+
+/* --------brand-section------ */
+.brand-img-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+/* -----footer-section------ */
+.footer-section {
+    height: 30px;
+    box-shadow: 0px -5px 4px rgb(50 50 50 / 24%);
+}
+.footer-section>ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+footer ul li{
+     list-style: none;
+     margin: 15px 35px;
+}
+.footer-section ul li a{
+    color: #242424;
+    text-decoration: none;
 }

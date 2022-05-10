@@ -14,7 +14,9 @@
     }
 }
 @media screen and (max-width: 750px) {
-
+    .container {
+        margin: 60px 15px;
+    }
     .logo{
         width: 40px;
     }
@@ -25,6 +27,7 @@
     .hero-ariya{
        flex-direction: row;
    }
+   
    .common-section-header h1{
        font-size: 2rem;
    }
@@ -45,5 +48,15 @@
     }
     .contact {
         margin-top: 147px;
+    }
+    .mySlides{
+        padding: 0;
+    }
+    .form-ariya{
+        width: 350px;
+    }
+    .form-ariya input {
+        width: 300px;
+        height: 30px;
     }
 }
